@@ -50,7 +50,7 @@ input{
 button{
     padding: 10px;
     font-size: 16px;
-    background-color: #5594d7;
+    background-color: #3e81c8;
     color:white;
     border: none;
     border-radius: 4px;
@@ -58,7 +58,7 @@ button{
 }
 
 button:hover{
-    background-color: #0056b3;
+    background-color: #337dcb;
 }
 
 button:active{
