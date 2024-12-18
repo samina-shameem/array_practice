@@ -1,0 +1,79 @@
+/*general reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*container styling */
+.continer{
+    max-width: 600px;
+    margin: 50px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    color:#a706a7;
+    margin-bottom :20px;
+}
+
+p{
+    margin: bottom 10px;
+}
+
+/*i/p nd bttns*/
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+ 
+button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5594d7;
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+button:active{
+    transform: scale(0.98);
+
+}
+
+/*o/p styling*/
+.output-area{
+    margin: top 20px;
+    text-align: center;
+}
+
+#output{
+    font-weight: bold;
+    color:#28a745;
+    margin: top 10px;
+}
