@@ -16,6 +16,7 @@ addButton.addEventListener('click',() =>{
     if(!isNaN(value)){//check if the i/p is valid(datatypes)
         numbers.push(value);//add to array(array method)
         output.textContent=`Array:[${numbers.join(',')}]`;
+        output.style.color="#28a745";//reset o/p color to green
         numberInput.value='';//clear i/p field
         }else{
             output.textContent="Please enter a valid number.";
@@ -28,7 +29,7 @@ addButton.addEventListener('click',() =>{
 sumButton.addEventListener('click',() => {
     let sum=0;// initilize sum (variables)
 
-    for(let i=0; i< numbers.length;i++){//loop through array (operators: <, +=)
+    for(let i=0; i < numbers.length; i++){//loop through array (operators: <, +=)
         sum += numbers[i];
 
     }
