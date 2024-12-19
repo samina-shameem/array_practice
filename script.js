@@ -5,7 +5,7 @@ const numberInput = document.getElementById('numberInput');
 const addButton = document.getElementById('addButton');//button to add a number
 const removeButton = document.getElementById('removeButton');//button to remove last number
 const sumButton = document.getElementById('sumButton');//Button to calculate sum
-const arrayContent= document.getElementById('arrayConten');//array display area
+const arrayContent= document.getElementById('arrayContent');//array display area
 const results= document.getElementById('results');//results display area
 
 
