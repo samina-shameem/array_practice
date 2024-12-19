@@ -5,7 +5,8 @@ const numberInput = document.getElementById('numberInput');
 const addButton = document.getElementById('addButton');//button to add a number
 const removeButton = document.getElementById('removeButton');//button to remove last number
 const sumButton = document.getElementById('sumButton');//Button to calculate sum
-const output = document.getElementById('sumButton');//o/p display area
+const arrayContent= document.getElementById('arrayConten');//array display area
+const results= document.getElementById('results');//results display area
 
 
 //dom manipulation
@@ -20,8 +21,8 @@ addButton.addEventListener('click', () => {
         results.style.color = "#28a745";//sucess color
         numberInput.value = '';//clear i/p field
     } else {
-        output.textContent = "Please enter a valid number.";
-        output.style.color = "red";//red color.
+       results.textContent = "Please enter a valid number.";
+       results.style.color = "red";//red color.
     }
 });
 
@@ -43,17 +44,12 @@ removeButton.addEventListener('click', () => {
 
 sumButton.addEventListener('click', () => {
     if (numbers.length > 0) {
-        let sum = 0;// initilize sum (variables)
-        for(let i=0; i < numbers.length; i++){
-            sum+= numbers[i];//calculate sum
-        }
-        results.textContent=`Sum or Array: ${sum}`;//display sum
-        results.style.color='#28a745';//success color
-
-
+        const sum = numbers.reduce((acc, curr) => acc + curr);// Calculate sum
+        results.textContent=`Sum of Array:${sum}`;//display sum
+        results.style.color='#28a745'//success color
     }else{
-        results.textContent = 'The array is empty. Add numbers first!';
-        results.style.color = 'red';//error color
+        results.textContent='The array is empty.Add numbers first!';
+        results.style.color ='red';//error color
     }
 
     
